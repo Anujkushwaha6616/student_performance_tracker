@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Student Details</title></head>
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #738bf4);
+        text-align: center;
+        padding: 60px;
+        margin: 0;
+    }
+    h2,h3{
+        color:crimson;
+        text-align:center;
+        text-shadow: 1px 1px 2px #000;
+        margin-bottom: 20px;
+
+    }
+    ul{
+        list-style-type: disc;
+        text-wrap-mode: wrap;
+        text-align:left ;
+        
+    }
+</style>
+<body>
+<h2>Student: {{ student[0] }} ({{ roll }})</h2>
+<h3>Grades:</h3>
+<ul>
+    {% for subject, grade in grades %}
+        <li>{{ subject }}: {{ grade }}</li>
+    {% endfor %}
+</ul>
+<a href="/">Back</a>
+</body>
+</html>

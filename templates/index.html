@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>Student Tracker</title></head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<body>
+<h2>Add Student</h2>
+<form action="/add_student" method="post">
+    Name: <input type="text" name="name"><br>
+    Roll Number: <input type="text" name="roll"><br>
+    <input type="submit" value="Add Student">
+</form>
+
+<h2>Add Grade</h2>
+<form action="/add_grade" method="post">
+    Roll Number: <input type="text" name="roll"><br>
+    Subject: <input type="text" name="subject"><br>
+    Grade: <input type="number" name="grade"><br>
+    <input type="submit" value="Add Grade">
+</form>
+
+<h2>View Student</h2>
+<form action="/view_student" method="get">
+    Roll Number: <input type="text" name="roll">
+    <input type="submit" value="View">
+</form>
+
+<h2>Calculate Average</h2>
+<form action="/average" method="get">
+    Roll Number: <input type="text" name="roll">
+    <input type="submit" value="Calculate">
+</form>
+</body>
+</html>
