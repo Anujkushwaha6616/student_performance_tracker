@@ -42,7 +42,7 @@ How to Run the Project
 
 Clone the repository
 
-git clone https://github.comanujkushwaha6616/student-tracker.git
+git clone https://github.com/Anujkushwaha6616/student-tracker.git
 
 
 Go to the project folder
